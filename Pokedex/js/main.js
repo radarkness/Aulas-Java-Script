@@ -3,16 +3,10 @@ const limit = 10
 const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
 fetch(url)
-    .then(function (response) {
-        console.log(response)
-    })
-    .catch(function (error) {
-        console.error(error)
-    })
-    .finally(function(){
-        console.log('Requisição concluída')
-    })
-
+    .then((response) => response.json())
+    .then((jsonBody) => console.log(jsonBody))
+    .catch((error) => console.error(error))
+ 
 const x = 2000;
 console.log(x);
 
