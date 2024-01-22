@@ -1,30 +1,8 @@
-const offset = 0
-const limit = 10
-const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
-
-fetch(url)
-    .then((response) => response.json())
-    .then((jsonBody) => console.log(jsonBody))
-    .catch((error) => console.error(error))
- 
-const x = 2000;
-console.log(x);
-
-
-
-
-
-
-
-
-
-
-/*
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 
-const maxRecords = 151
-const limit = 10
+const maxRecords = 386
+const limit = 30
 let offset = 0;
 
 function convertPokemonToLi(pokemon) {
@@ -67,7 +45,7 @@ loadMoreButton.addEventListener('click', () => {
         loadPokemonItens(offset, limit)
     }
 })
-*/
+
 
 
 
